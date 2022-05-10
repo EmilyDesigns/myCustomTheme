@@ -1,0 +1,133 @@
+
+#logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1%;
+}
+body {
+  background-color: #F7F9F7;
+  margin: 0;
+}
+#bg-white {
+  background: white;
+  display: block;
+  margin-right: 10%;
+  margin-left: 10%;
+  height: auto;
+}
+nav {
+  background: linear-gradient(to top,#0B3954,#135e8a);
+  color: white;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 25px;
+  padding: 1px;
+}
+#portnav {
+  text-align: center;
+  padding: 0px;
+}
+#portnav a {
+  color: white;
+  text-decoration: none;
+}
+#portnav a:hover {
+  color: #FF5A5F;
+}
+#portnav a:active {
+  color: white;
+}
+footer {
+  background: linear-gradient(to top,#0B3954,#135e8a);
+  height: 125px;
+}
+#logo2 {
+  color: white;
+  display: inline-block;
+  font-family: futura;
+  font-size: 120px;
+  margin-left: 3%;
+  margin-top: 1.7%;
+}
+.list {
+  display: inline;
+  list-style-type: '';
+  margin: 55px;
+}
+.list:hover {
+  color: #FF5A5F;
+}
+.list:active {
+  color: white;
+}
+
+ul {
+  padding-inline-start: 0;
+}
+#footerStrip {
+  padding-top: 10px;
+  margin-top: 10px;
+}
+#footerGrid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 2fr;
+  height: 100%;
+}
+footer li {
+  list-style-type: none;
+  line-height: 25px;
+  color: white;
+  font-size: 16px;
+  font-family: arial;
+}
+.footerHeading {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 20px;
+}
+figure {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 80px;
+  width: 100px;
+}
+@media screen and (max-width: 480px) {
+  #bg-white {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+/*FOOTER QUERIES*/
+@media screen and (max-width: 863px) {
+  footer li {
+    margin-inline-end: 30px;
+  }
+  #footerGrid {
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 11%;
+  }
+  figure {
+    display: none;
+    margin-inline-end: 20px;
+    margin-inline-start: 25px;
+  }
+}
+@media screen and (max-width: 540px) {
+  #footerGrid {
+    margin-left: 9%;
+  }
+  #footerStrip {
+    padding-top: 4px;
+  }
+  footer li {
+    line-height: 30px;
+  }
+}
+@media screen and (max-width: 480px) {
+  #footerGrid {
+    margin-left: 8%;
+  }
+  footer li {
+    font-size: 14px;
+  }
+}

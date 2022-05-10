@@ -35,18 +35,6 @@
   </div>
 </footer>
 
-<script type="text/javascript">
-$('.navItem').click(
-function() {
-if ($(this).hasClass('dropdownOpen')) {
-  $(this).removeClass('dropdownOpen');
-}
-else {
-  $(this).addClass('dropdownOpen');
-}
-}
-);
-</script>
 <?php wp_footer(); ?>
 </body>
 </html>
